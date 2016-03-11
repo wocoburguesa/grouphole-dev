@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Featured Scheme 1</h1>
+    <p>This is a sample summary</p>
+  </div>
+</div>
+
+<div class="featured-items container">
+  <div class="row">
+
+    <div class="featured-item-preview col-md-5ths col-xs-6"
+         ng-repeat="post in posts"
+         ng-click="goToPost(post)">
+      <img class="thumbnail" src="dist/assets/images/04_03_1-Stock-Market-Prices_web.jpg"></img>
+      <p class="title">{{ ::post.title }}</p>
+      <p class="summary">{{ ::post.body }}</p>
+      <a class="comment-count">{{ ::post.comment_count }} comments</a>
+      <div class="votes">
+        <span ng-click="upvote(post)"><i class="fa fa-caret-up"></i></span>
+        <span>{{ ::post.upvote_count }}</span>
+      </div>
+      <a class="author-thumb">
+        <img src="dist/assets/images/profile_pict_001_circle.png"></img>
+      </a>
+    </div>
+  </div>
+  <div class="row big-bottom-btn">
+    <button class="load-more-previews">GIMME MORE</button>
+  </div>
+</div>

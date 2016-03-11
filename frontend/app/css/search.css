@@ -1,0 +1,16 @@
+.search-header {
+    padding: 50px 0;
+    color: #5C5C5C;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.search-header .right {
+    text-align: right;
+    font-style: normal;
+}
+
+.search-header .left p span {
+    font-weight: 600;
+    font-style: normal;
+}

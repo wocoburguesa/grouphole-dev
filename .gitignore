@@ -1,0 +1,17 @@
+local_settings.py
+*~
+*#
+*.pyc
+*.pyo
+*.orig
+*.bak
+*.swp
+*.beam
+.sass-cache/
+node_modules
+bower_components
+.idea
+npm-debug.log
+frontend/.tmp
+frontend/dist
+media

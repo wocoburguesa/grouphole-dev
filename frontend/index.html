@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="grouphole">
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="dist/assets/css/styles-vendor.css"/>
+    <link rel="stylesheet" href="dist/assets/css/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/assets/css/styles.css"/>
+  </head>
+  <body>
+    <div class="main-navbar" data-example-id="navbar-fixed-to-top"
+         ng-controller="NavbarCtrl">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+            <img src="dist/assets/images/GroupHole-03.png"></img></a>
+          </div>
+            <ul class="nav navbar-nav pull-right">
+              <!--
+              <li><input type="text"></input></li>
+              <li><span>|</span></li>
+              -->
+              <li ng-show="!user.anonymous"><button class="btn btn-success new-post" ng-click="goToCreateForm()">
+                  <i class="fa fa-plus"></i>Create a new scheme
+              </button></li>
+              <li ng-show="user.anonymous"><a href="#">Sign Up</a></li>
+              <li ng-show="user.anonymous"><a href="" ng-click="openLoginModal()">Login</a></li>
+              <li ng-show="!user.anonymous"><a href="" ng-click="openLoginModal()"><i class="fa fa-user"></i>{{ user.username }}</a></li>
+            </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="main-view" ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <script src="dist/assets/js/vendor.js"></script>
+    <script src="dist/assets/js/main.js"></script>
+  </body>
+</html>

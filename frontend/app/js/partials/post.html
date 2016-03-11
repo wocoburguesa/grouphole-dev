@@ -1,0 +1,86 @@
+<div class="container single-post-container">
+  <div class="row single-post-header">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.short_description }}</p>
+    <div class="actions">
+      <button class="likes"><i class="fa fa-caret-up"></i>{{ post.upvote_count }} LIKES</button>
+      <button class="website">WEBSITE</button>
+    </div>
+  </div>
+
+  <div class="single-post-info">
+    <div class="row picture-and-author">
+      <div class="col-md-6 main-picture">
+        <img src="dist/assets/images/field_panorama_stock_5_by_f3rd4-d45kgfp.jpg"></img>
+      </div>
+      <div class="col-md-6 author">
+        <div class="author-info">
+          <img src="dist/assets/images/profile_pict_001_circle.png"></img>
+          <div class="name-and-date">
+            <p>Added by {{ author.username }}</p>
+            <p>on {{ post.readableDate }}</p>
+          </div>
+        </div>
+
+        <div class="social-actions">
+          <p>Share this Grouphole</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row details">
+      <h4 class="how-it-works">How it works:</h4>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
+
+  <div class="comments">
+
+    <div class="row header">
+      <div class="col-md-6 comment-count">
+        <p>{{ ::commentsCount }} comment{{ (commentsCount === 1) ? '' : 's' }}</p>
+      </div>
+      <div class="col-md-6 favorite-count right">
+        <p><i class="fa fa-star"></i></p>
+        <p>79</p>
+      </div>
+    </div>
+
+    <div class="row new-comment">
+      <textarea ng-model="newComment"></textarea>
+      <button class="post"
+              ng-click="postComment(newComment)"><i class="fa fa-pencil fa-2x"></i></button>
+    </div>
+
+    <div class="row comment-tabs">
+      <a class="best active">Best<i class="fa fa-caret-down"></i></a>
+      <a class="community">Community<i class="fa fa-caret-down"></i></a>
+      <a class="my-disqus">My Disqus<i class="fa fa-caret-down"></i></a>
+    </div>
+
+    <div class="row comment-item"
+         ng-repeat="comment in comments">
+      <div class="col-md-2 comment-thumbnail">
+        <img src="dist/assets/images/profile_pict_001_circle.png"></img>
+      </div>
+      <div class="col-md-10 comment-content">
+        <div class="comment-header">
+          <a>{{ ::comment.author_name}} </a>&#9679;<span> {{ comment.created | timeAgo }}</span>
+        </div>
+
+        <div class="comment-body">
+          <p>{{ ::comment.comment }}</p>
+        </div>
+
+        <div class="comment-footer">
+          <a class="comment-rating">2</a>
+          <a class="upvote-comment"><i class="fa fa-angle-up"></i></a>
+          <a class="downvote-comment"><i class="fa fa-angle-down"></i></a>
+          <a class="reply-comment">Reply</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

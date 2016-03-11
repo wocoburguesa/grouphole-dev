@@ -1,0 +1,24 @@
+<div class="modal-body login-modal">
+  <div class="modal-header">
+    <img src="dist/assets/images/GroupHole-01.png">
+  </div>
+  <div class="modal-body">
+    <div class="social-login">
+      <button class="fb-login-btn">LOGIN WITH FACEBOOK</button>
+    </div>
+    <div class="login-divider">
+      or
+    </div>
+    <div class="email-login">
+      <p class="title">Login with your email address</p>
+      <input ng-model="userData.username" type="text"></input>
+      <input ng-model="userData.password" type="password"></input>
+      <div class="remember-me">
+        <input type="checkbox"></input><label>Remember me</label>
+      </div>
+      <button ng-click="submitLogin()" class="login-submit-btn">LOGIN</button>
+      <a class="forgot">Forgot your username or password?</a>
+      <p class="sign-up-section">Don't have an account? <a>Sign up</a></p>
+    </div>
+  </div>
+</div>

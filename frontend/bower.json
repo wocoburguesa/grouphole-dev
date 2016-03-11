@@ -1,0 +1,40 @@
+{
+  "name": "grouphole",
+  "authors": [
+    "wocoburguesa <wocoburguesa@gmail.com>"
+  ],
+  "description": "grouphole.com",
+  "main": "app.js",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.2.18",
+    "restangular": "^1.5.2",
+    "angular-bootstrap": "^1.2.1",
+    "ng-file-upload": "^12.0.1",
+    "angular-ui-select3": "ui-select#*",
+    "angular-cookies": "^1.5.0",
+    "moment": "^2.12.0",
+    "angular-timeago": "^0.2.5"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/fonts/*",
+        "dist/css/*"
+      ]
+    }
+  }
+}

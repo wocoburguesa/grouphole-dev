@@ -1,0 +1,45 @@
+<div class="container upload-container">
+  <h1>Share your hole</h1>
+
+  <div class="row upload-form">
+    <div class="col-md-5 upload-picture">
+      <div ngf-drop ngf-select ng-model="files" class="drop-box"
+           ngf-drag-over-class="'dragover'" ngf-multiple="true" ngf-allow-dir="true"
+           accept="image/*,application/pdf"
+           ngf-pattern="'image/*,application/pdf'">
+        <i class="fa fa-cloud-upload"></i>
+        <p>Drag and drop an image here, or click to browse.</p>
+      </div>
+    </div>
+
+    <div class="col-md-7 upload-form-data">
+      <input class="scheme-title"
+             ng-model="newPost.title"
+             type="text" placeholder="Title"></input>
+      <input class="scheme-website"
+             ng-model="newPost.link"
+             type="text" placeholder="Product Website (optional)"></input>
+      <input class="scheme-description"
+             ng-model="newPost.body"
+             type="text" placeholder="Description"></input>
+      <div class="scheme-tags"></div>
+    </div>
+
+    <!--
+    <ui-select multiple ng-model="multipleDemo.selectedPeople" theme="select2" ng-disabled="disabled" style="width: 800px;">
+      <ui-select-match placeholder="Select person...">{{$item.name}} &lt;{{$item.email}}&gt;</ui-select-match>
+      <ui-select-choices repeat="person in people | propsFilter: {name: $select.search, age: $select.search}">
+        <div ng-bind-html="person.name | highlight: $select.search"></div>
+        <small>
+          email: {{person.email}}
+          age: <span ng-bind-html="''+person.age | highlight: $select.search"></span>
+        </small>
+      </ui-select-choices>
+    </ui-select>
+    -->
+  </div>
+  <div class="row big-bottom-btn">
+    <button class="submit-new-scheme"
+            ng-click="submitPost()">SUBMIT</button>
+  </div>
+</div>

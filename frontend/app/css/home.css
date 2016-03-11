@@ -1,0 +1,85 @@
+.jumbotron {
+    background-image: url(http://img05.deviantart.net/9cab/i/2011/217/a/0/field_panorama_stock_5_by_f3rd4-d45kgfp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    margin: 50px 100px;
+}
+
+.featured-items {
+    color: #595959;
+}
+
+.featured-items .featured-item-preview {
+    cursor: pointer;
+}
+
+.featured-items .featured-item-preview:hover {
+    padding: 5px;
+    border: 1px solid #EEE;
+    border-radius: 3px;
+}
+
+.featured-items .featured-item-preview .thumbnail {
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+
+.featured-items .featured-item-preview .title {
+    font-size: 18px;
+}
+
+.featured-items .featured-item-preview .summary {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.featured-items .featured-item-preview .comment-count {
+    font-size: 12px;
+}
+
+.featured-items .featured-item-preview .author-thumb img {
+    width: 40px;
+}
+
+.featured-items .featured-item-preview .author-thumb,
+.featured-items .featured-item-preview .votes {
+    float: right;
+}
+
+.featured-items .featured-item-preview .votes > * {
+    display: block;
+}
+
+.featured-items .featured-item-preview .votes > span:first-child {
+    text-align: center;
+    font-size: 16px;
+}
+
+.featured-items .featured-item-preview .votes > span:last-child {
+    font-size: 14px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.load-more .load-more-previews {
+    padding: 20px 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 3px solid #1789FB;
+    background-color: #fff;
+    color: #1789FB;
+    font-weight: 500;
+}

@@ -1,0 +1,5 @@
+[client]
+database = grouphole
+user = wocoburguesa
+password = homosecs
+default-character-set = utf8

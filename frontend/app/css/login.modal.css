@@ -1,0 +1,101 @@
+.login-modal {
+    padding: 0;
+}
+
+.login-modal .modal-header {
+    padding: 0;
+    text-align: center;
+    height: 150px;
+}
+
+.login-modal .modal-header img {
+    height: 150px;
+}
+
+.login-modal .modal-body {
+    text-align: center;
+    padding: 15px 100px;
+    color: #5C5C5C;
+}
+
+.login-modal .fb-login-btn {
+    width: 400px;
+    border-radius: 15px;
+    background-color: #3D5B96;
+    color: #fff;
+    border: none;
+    padding: 6px;
+}
+
+.login-divider {
+    padding: 20px;
+    position: relative;
+    font-size: 12px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.login-divider:before, .login-divider:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 1px;
+    content: '\a0';
+    background-color: #9B9B9B;
+}
+.login-divider:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+.login-divider:after {
+    margin-left: 2%;
+}
+
+.login-modal .email-login > * {
+    display: block;
+}
+
+.login-modal .email-login .title {
+    font-size: 16px;
+}
+
+.login-modal .email-login .login-submit-btn {
+    margin: 20px 0;
+    width: 100%;
+    padding: 7px;
+    border: 2px solid #1789FB;
+    color: #1B9DFC;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0);
+    font-weight: 600;
+}
+
+.login-modal .email-login .forgot {
+    margin: 20px;
+}
+
+.login-modal .email-login .remember-me {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.login-modal .email-login .remember-me > input {
+    margin-right: 5px;
+}
+
+.login-modal .email-login .remember-me > label {
+    font-weight: 400;
+}
+
+.login-modal .email-login a {
+    color: #1789FB;
+}
+
+.login-modal .email-login input[type="text"] {
+    width: 100%;
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 5px 0;
+}

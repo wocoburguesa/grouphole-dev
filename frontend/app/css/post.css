@@ -1,0 +1,180 @@
+.single-post-container {
+    color: #5B5B5B;
+}
+
+.single-post-header {
+    padding: 50px 100px;
+}
+
+.single-post-header p {
+    font-size: 18px;
+}
+
+.single-post-header .actions {
+    padding: 20px 0;
+    color: #1789FB;
+}
+
+.single-post-header .actions button {
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: #fff;
+    border: 2px solid #1789FB;
+    margin-right: 20px;
+}
+
+.single-post-header .actions button .fa {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.single-post-info {
+    margin-bottom: 50px;
+}
+
+.single-post-info .picture-and-author .main-picture {
+    padding: 0;
+}
+
+.single-post-info .picture-and-author .main-picture img {
+    width: 455px;
+}
+
+.single-post-info .picture-and-author .author-info img {
+    width: 50px;
+    display: inline-block;
+}
+
+.single-post-info .picture-and-author .author-info .name-and-date {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 20px;
+}
+
+.single-post-info .picture-and-author .author-info .name-and-date p:first-child {
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.single-post-info .picture-and-author .author-info .name-and-date p:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.single-post-info .details {
+    margin-top: 50px;
+}
+
+.single-post-info .details .how-it-works {
+    margin-bottom: 30px;
+}
+
+.comments {
+    padding-top: 50px;
+    border-top: 1px solid;
+}
+
+.comments .header {
+    padding: 0 120px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.comments .header .favorite-count > * {
+    display: inline-block;
+}
+
+.comments .header .favorite-count > p:first-child {
+    color: #FECC59;
+}
+
+.comments .header .favorite-count > p:last-child {
+    padding: 5px 10px;
+    background-color: #E3E7ED;
+    border-radius: 5px;
+    color: #4B626F;
+}
+
+.comments .new-comment {
+    font-size: 0;
+    padding: 0 200px;
+}
+
+.comments .new-comment textarea {
+    height: 75px;
+    width: 90%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 3px solid #DCE4EB;
+    border-right: none;
+    resize: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.comments .new-comment button {
+    height: 75px;
+    width: 10%;
+    vertical-align: top;
+    color: #4B626F;
+    background-color: #E3E7ED;
+    border: 3px solid #4B626F;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.comments .new-comment button i {
+    font-size: 35px;
+}
+
+.comments .comment-tabs {
+    font-size: 20px;
+    padding: 0;
+    border-bottom: 3px solid #DCE4EA;
+    margin: 40px 150px 40px 150px;
+    padding-bottom: 5px;
+}
+
+.comments .comment-tabs > a {
+    padding: 0 25px;
+    padding-bottom: 8px;
+    color: #899BA9;
+    text-decoration: none;
+    cursor: pointer;
+}
+.comments .comment-tabs > a.active {
+    border-bottom: 3px solid #2F9CFC;
+    color: #5B5B5B;
+}
+
+.comments .comment-tabs > a > i {
+    color: #2F9CFC;
+    margin-left: 5px;
+}
+
+.comments .comment-item {
+    margin: 40px 150px 40px 150px;
+    padding: 0;
+}
+
+.comments .comment-item .comment-thumbnail > img {
+    width: 100px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.comments .comment-item .comment-header {
+    margin-bottom: 5px;
+}
+
+.comments .comment-item .comment-footer > a {
+    margin-right: 5px;
+    color: #899BA9;
+    cursor: pointer;
+}
+
+.comments .comment-item .comment-footer > .upvote-comment,
+.comments .comment-item .comment-footer > .downvote-comment {
+    font-size: 20px;
+}
